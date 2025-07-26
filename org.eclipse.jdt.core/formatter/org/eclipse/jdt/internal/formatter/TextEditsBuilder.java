@@ -202,7 +202,7 @@ public class TextEditsBuilder extends TokenTraverser {
 			return; // this is an unformatted block comment, don't force asterisk
 		if (getNext() == null && !emptyLine) {
 			if(token.tokenType == TokenNameCOMMENT_MARKDOWN) {
-				this.buffer.append("/// "); //$NON-NLS-1$
+				this.buffer.append("///"); //$NON-NLS-1$
 			}
 			return; // this is the last token of block comment, asterisk is included
 		}
